@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>ThunderSEND Receiving File</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body{
+                background-image: linear-gradient(to right, #ff7fba, #8a2be2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex justify-center items-center h-screen">
+            <div class="bg-white rounded-lg shadow-lg p-8 w-96">
+                <h1 class="text-2xl font-bold mb-4"><i>ThunderSEND - Receiving</i></h1>
+                <p class="text-gray-700 mb-4">Thank you for using ThunderSEND! Your file is being fetched. Hold on...</p>
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
