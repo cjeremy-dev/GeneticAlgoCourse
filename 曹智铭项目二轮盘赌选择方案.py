@@ -70,7 +70,8 @@ def genetic_algorithm(pop_size=100, generations=100000, mutation_rate=0.01, prec
         # 打印当前最佳解
         best_individual = max(population, key=fitness)
         best_fitness = fitness(best_individual)
-        print(f"Generation {generation}: Best Fitness = {best_fitness}, x = {binary_to_float(best_individual, min_val=-1, max_val=2)}")
+        if generation % 1000 == 0:
+            print(f"Generation {generation}: Best Fitness = {best_fitness}, x = {binary_to_float(best_individual, min_val=-1, max_val=2)}")
     
     best_individual = max(population, key=fitness)
     best_fitness = fitness(best_individual)
