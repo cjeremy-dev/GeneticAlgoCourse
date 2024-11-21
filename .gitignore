@@ -1,5 +1,6 @@
 setup.py
 main.py
 
-/tokens/my_token.txt
-/settings/name.txt
+tokens/my_token.txt
+
+settings/
