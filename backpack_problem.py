@@ -19,6 +19,7 @@ def generate_population(pop_size=50):
         population.append(individual)
     return population
 
+    
 # Calculate the fitness of each individual
 def fitness(individual):
     weight = 0
