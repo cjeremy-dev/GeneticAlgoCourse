@@ -123,13 +123,12 @@ def genetic_algorithm(generations=1000, pop_size=50, teams=4, pm=0.05):
     return best_individual, best_fitness, best_boxes
 
 
-if __name__ == "__main__":
-    print("理论最少箱子数:", math.ceil(sum(volumes) / V))
-    best_individual, best_fitness, best_boxes = genetic_algorithm(generations, popsize, teams, pm)
-    print("各箱子装物情况：", best_boxes)
-    print("各箱子占用情况：")
-    for b in best_boxes:
-        total = 0
-        for i in b:
-            total += volumes[i]
-        print(total)
+print("理论最少箱子数:", math.ceil(sum(volumes) / V))
+best_individual, best_fitness, best_boxes = genetic_algorithm(generations, popsize, teams, pm)
+print("各箱子装物情况：", best_boxes)
+print("各箱子占用情况：")
+for b in best_boxes:
+    total = 0
+    for i in b:
+        total += volumes[i]
+    print(total)
